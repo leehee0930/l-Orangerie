@@ -1,0 +1,363 @@
+@import url(reset.css);
+@import url(common.css);
+@import url(header2.css);
+@import url(footer.css);
+
+#wrap{width:100%;}
+header, section, footer{width:inherit;}
+section{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  min-width: 100vh;
+}
+html{scroll-behavior: smooth;}
+
+/*---------- section style ----------*/
+#container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.section_in{
+  /* border: 1px solid #000; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  background: #fdfdfd;
+  margin: 0 auto;
+  padding: 50px;
+  margin-top: 90px;
+}
+.location{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 1200px;
+  color: #888;
+}
+.location span:nth-of-type(2){
+  color: #333;
+  text-transform: capitalize;
+}
+/* collections */
+.collections{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 1200px;
+}
+.collections h2{
+  font-size: 32px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: #333;
+  text-transform: capitalize;
+  border-bottom: 1px solid #ccc;
+}
+.con{
+  margin-top: 50px;
+  overflow: hidden;
+}
+.con img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: 0.35s;
+}
+.con img:hover{
+  transform: scale(1.1);
+  transition: 0.3s;
+}
+.con h3{
+  margin-top: 20px;
+  text-transform: capitalize;
+  font-size: 24px;
+  font-weight: 600;
+}
+.con h3:hover{
+  color: orangered;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+/* visit */
+.visit_box{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 1200px;
+  margin: auto;
+  margin-top: 30px;
+  padding: 20px;
+}
+.visit_header{
+  text-align: center;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #ccc;
+  text-transform: capitalize;
+}
+.visit_header h2{
+  font-size: 28px;
+  font-weight: 600;
+  color: #333;
+}
+.visit_header span{
+  font-size: 16px;
+  color: #666;
+}
+.visit_content{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px;
+  width: 100%;
+  max-width: 1200px;
+  padding: 20px 0;
+  background-color: #f8f8f8;
+}
+.visit_img{
+  flex: 1;
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+}
+.visit_img img{
+  width: 95%;
+  margin-left: 30px;
+}
+.visit_info{
+  flex: 1;
+  max-width: 600px;
+  margin-left: 20px;
+}
+.open_hour{margin: 20px 0;}
+.open_hour ul li{
+  margin-bottom: 5px;
+  font-size: 16px;
+  color: #666;
+}
+.note{
+  font-size: 14px;
+  color: #888;
+}
+.museum_info{
+  margin-top: 10px;
+  font-size: 16px;
+  color: #333;
+}
+.museum_info address{
+  font-style: normal;
+  line-height: 1.5
+}
+.ticket_prices{margin-top: 20px;}
+.ticket_prices p{
+  margin: 5px 0;
+  font-size: 16px;
+  color: #333;
+}
+.all-rates{
+  display: inline-block;
+  margin-top: 10px;
+  font-size: 14px;
+  color: orangered;
+  text-decoration: underline;
+}
+iframe{
+  width: 1200px;
+  height: 300px;
+  margin-top: 20px;
+  border: none;
+}
+/* what */
+.wheader{
+  font-size: 32px;
+  font-weight: 600;
+  color: #333;
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 30px;
+  text-transform: capitalize;
+}
+.exhibitions_box{
+  display: flex;
+  gap: 20px;
+}
+.exhibitions{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: auto;
+  overflow: hidden;
+}
+.exhibitions img{
+  width: 600px;
+  height: 400px;
+  object-fit: cover;
+}
+.exhibitions div{
+  margin-top: 30px;
+  font-size: 22px;
+  font-weight: 400;
+  color: #333;
+  text-transform: capitalize;
+}
+.exhibitions div:hover{
+  color: orangered;
+  cursor: pointer;
+}
+.schedule{
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  width: 1200px;
+  color: #333;
+}
+.schedule h2{
+  width: 1200px;
+  margin-top: 30px;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+  font-size: 24px;
+  font-weight: 600;
+  border-bottom: 1px solid #ccc;
+}
+.schedule_item{
+  width: 1200px;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+  border-bottom: 2px dotted #999;
+}
+.date{
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+.event_title,.event_details{
+  font-size: 16px;
+  font-weight: 400;
+  margin-bottom: 5px;
+}
+
+/* re */
+.re{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 1200px;
+  flex-wrap: wrap;
+}
+.re .location{margin-bottom: 20px;}
+.re_item{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-right: 20px;
+  margin-bottom: 30px;
+}
+.re_item img{
+  width: 550px;
+  height: 250px;
+  object-fit: cover;
+  margin-bottom: 10px;
+  transition: 0.35s;
+}
+.re_item span{
+  font-size: 18px;
+  font-weight: 600;
+  color: #333;
+  transition: 0.35s;
+}
+.re_item span:hover{
+  color: orangered;
+  cursor: pointer;
+  transition: 0.35s;
+}
+
+
+/* tickets */
+.content{
+  /* border: 1px solid red; */
+  margin-top: 50px;
+  width: 1200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.content h2{
+  margin: 50px 0;
+  font-size: 32px;
+  font-weight: 600;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #ccc;
+  color: #333;
+}
+.img_box{
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  width: 100%;
+}
+.img_txt{
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  margin-left: 20px;
+  padding-left: 20px;
+  width: 33.333333%;
+  flex: 1 1 20%;
+  position: relative;
+}
+.img_txt a{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  width: 340px;
+  height: 175px;
+  overflow: hidden;
+}
+.img_txt img{
+  width: 340px;
+  height: 185px;
+  margin-bottom: 10px;
+  transition: transform 0.35s;
+  object-fit: cover;
+}
+.img_txt img:hover{
+  transform: scale(1.1);
+  transition: 0.35s;
+}
+.ttext a{
+  height: 120px;
+  margin-top: 20px;
+  color: #333;
+}
+.ttext h3{
+  font-size: 18px;
+  font-weight: 600;
+  transition: 0.35s;
+}
+.ttext h3:hover{
+  color: orangered;
+  transition: 0.35s;
+}
+.ttext span{
+  margin-top: 10px;
+  text-align: center;
+  color: #666;
+}
+

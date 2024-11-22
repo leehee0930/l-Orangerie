@@ -1,0 +1,425 @@
+@import url(reset.css);
+@import url(common.css);
+@import url(header2.css);
+@import url(footer.css);
+
+#wrap{
+  display: flex;
+  align-items: center;
+  width:100%;
+  flex-direction: column;
+}
+header, section, footer{width:inherit;}
+section{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+html{scroll-behavior: smooth;}
+
+/*---------- section style ----------*/
+.section_in{
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 50px;
+  box-sizing: border-box;
+}
+.admission{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+  box-sizing: border-box;
+  margin-top: 120px;
+  background-color: #FDFDFD;
+}
+.admission_head{
+  padding: 20px 0;
+  font-size: 24px;
+  font-weight: 600;
+  color: #333;
+  border-bottom: 1px solid #ccc;
+}
+/* info */
+.info{
+  width: 100%;
+  margin: 50px;
+  color: #333;
+  font-size: 18px;
+}
+.info h2{
+  font-size: 20px;
+  font-weight: 600;
+}
+.info ul{margin: 30px 0;}
+.info ul li{margin: 15px 0;}
+.info ul li a{
+  font-style: italic;
+  text-decoration: underline;
+  color: orangered;
+}
+.info p{margin: 15px 0;}
+.info_group a{
+  font-style: italic;
+  text-decoration: underline;
+  color: orangered;
+}
+
+
+/* step */
+.step_title{
+  width: 100%;
+  padding: 20px 0 ;
+  font-size: 18px;
+  color: #222;
+  background-color: rgba(122, 140, 162, 0.8);
+  text-transform: capitalize;
+}
+.step_title p{
+  margin-left: 25px;
+  font-size: 22px;
+  font-weight: 600;
+}
+
+/* calendar */
+.visit{
+/*   border: 1px solid green; */
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+}
+.visit_calendar{
+/*   border: 1px solid orange; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex: 7;
+  margin: 30px 20px;
+}
+.calendar_header{
+/*   border: 1px solid blue; */
+  width: 100%;
+  background-color: rgba(238, 216, 189, 0.8);
+}
+.year{
+  padding: 10px 0;
+  text-align: center;
+  font-size: 22px;
+  border: 1px solid #FDFDFD;
+}
+.month{
+  text-align: center;
+  padding: 10px 0;
+  font-size: 16px;
+  font-weight: 600;
+  text-transform: uppercase;
+  border: 1px solid #FDFDFD;
+}
+.day_names{
+/*   border: 1px solid orangered; */
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.day_name{
+  width: 100%;
+  text-align: center;
+  padding: 10px 0;
+  font-size: 16px;
+  font-weight: 600;
+  text-transform: uppercase;
+  border: 1px solid #FDFDFD;
+}
+.calendar_body{
+  width: 100%;
+  border: 1px solid #FDFDFD;
+}
+.week{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.day{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100px;
+  border: 1px solid rgba(238, 216, 189, 0.8);
+}
+.day_date{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.visit_data{
+  /* border: 1px solid #000; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex: 3;
+  padding: 20px 0;
+  min-width: max-content;
+  height: 300px;
+}
+.data_avail{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+}
+.sday{
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  height: 50px;
+}
+.davail{
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  height: 50px;
+}
+.dnavail{
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  height: 50px;
+}
+.avail_box{
+  display: flex;
+  flex: 3;
+  justify-content: center;
+  align-items: center;
+}
+.sday .avail_box{
+  border: 10px solid transparent;
+  background-color: #7A8CA2;
+}
+.davail .avail_box{
+  border: 10px solid rgba(238, 216, 189, 0.8);
+}
+.dnavail .avail_box{
+  border: 10px solid transparent;
+  background-color: #eee;
+}
+.avail_text{
+  /* border: 1px solid orchid; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 7;
+  font-size: 16px;
+  font-weight: 400;
+  text-align: center;
+  text-transform: capitalize;
+}
+.week .day:nth-child(2){background-color: rgba(238, 238, 238, 0.5);}
+.day:hover{background-color: #eee;}
+
+/* visit hour */
+.visit_hour{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  margin: 50px 10px;
+}
+.hour_head{
+  width: 100%;
+  min-width: max-content;
+  margin-left: 2px;
+  padding: 20px 0;
+  font-size: 18px;
+  font-weight: 600;
+  text-align: center;
+  text-transform: uppercase;
+  background-color: rgba(238, 216, 189, 0.8);
+}
+.hour_body{
+  width: 100%;
+  margin-top: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.body_line{width: 100%;}
+.hour{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 10px 0;
+  font-size: 16px;
+  cursor: pointer;
+  border: 1px solid rgba(238, 216, 189, 0.8);
+}
+.hour:hover{background-color: #eee;}
+
+/* ticket */
+.visit_ticket{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 30px 0;
+  color: #333;
+}
+.ticket_product{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  min-width: fit-content;
+  padding: 10px 0;
+  border-bottom: 1px solid #ddd;
+}
+.ticket_product:last-child{border-bottom: none;}
+.product{
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  width: 100%;
+  padding: 5px 0;
+  font-size: 16px;
+}
+.product h3{font-weight: 600;}
+.item{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-top: 5px;
+}
+.item span{}
+.item select{
+  padding: 5px 10px;
+  box-sizing: border-box;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  outline: none;
+}
+
+/* audio */
+.audio{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  box-sizing: border-box;
+}
+.audio_text{
+  width: 100%;
+  margin: 50px;
+  color: #333;
+  font-size: 18px;
+}
+.audio ul li{
+  margin: 20px 0;
+  font-size: 18px;
+}
+.audio_products{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+}
+.audio_product{
+  width: 80%;
+  padding: 15px 0;
+  font-size: 16px;
+}
+.audio_product h3{
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+.audio_product:nth-child(1){border-bottom: 1px solid #ccc;}
+.audio_price{
+  display: flex;
+  justify-content: space-between;
+}
+.audio_price select{
+  padding: 5px 10px;
+  box-sizing: border-box;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  outline: none;
+}
+
+/* basket */
+.basket{
+  width: 100%;
+  color: #222;
+  font-size: 18px;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+.basket_title{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0;
+  background-color: rgba(255, 247, 223,0.5);
+}
+.basket_title p:nth-child(1){
+  flex: 4;
+  margin-left: 20px;
+}
+.basket_title p:nth-child(2){
+  flex: 4;
+  text-align: right;
+}
+.basket_title p:nth-child(3){
+  flex: 1;
+}
+.item_total{
+  text-align: right;
+  margin-right: 10px;
+}
+
+/* 5.step title */
+.confirm_btn{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0;
+}
+.confirm_btn p{margin-right: 25px;}
+.confirm_btn button{
+  margin: 0 20px;
+  padding: 20px 10px;
+  width: 400px;
+  font-size: 22px;
+  font-weight: 600;
+  text-transform: capitalize;
+  cursor: pointer;
+  color: #333;
+  border-radius: 5px;
+  border: 1px solid rgba(255, 247, 223,0.5);
+}
+.confirm_btn button:nth-child(1){background-color: rgba(255, 247, 223,1);}
+.confirm_btn button:nth-of-type(2){background-color: #fdfdfd;}
+.confirm_btn button:hover:nth-child(1){background-color: #FDFDFD;}
+.confirm_btn button:hover:nth-of-type(2){background-color: rgb(255, 242, 202);}
