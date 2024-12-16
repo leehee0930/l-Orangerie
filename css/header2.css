@@ -47,6 +47,10 @@ nav img{
   68%{color: #3F4551;}
   100%{color: #403C3F;}
 }
+.gnb li.active{
+  padding: 5px;
+  border-bottom: 3px solid rgba(0, 0, 0, 0.3);
+}
 
 .ticket{
 /*   border: 1px solid plum; */
